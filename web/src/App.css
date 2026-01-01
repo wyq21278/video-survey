@@ -1,0 +1,295 @@
+/* ===== 全局布局 ===== */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 16px 28px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  text-align: center;
+  padding: 8px 0 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 14px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.progress {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #666;
+}
+
+.submitted-badge {
+  margin-left: 6px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* ===== 文案样式 ===== */
+.page-subtitle {
+  margin: 14px 0 8px;
+  font-size: 16px;
+}
+
+.instructions {
+  margin: 10px 0 14px;
+  padding: 12px 14px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.instructions p {
+  margin: 8px 0;
+}
+
+.red-text {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.red-bold {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.black-bold {
+  color: #111;
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* ===== 视频通用 ===== */
+.video-player-vertical-small {
+  width: 150px;
+  height: 260px;
+  background: #000;
+  border-radius: 10px;
+  display: block;
+}
+
+.video-caption,
+.video-name {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* ===== PretrainPage ===== */
+.pretrain-page .pretrain-group {
+  margin: 14px 0 18px;
+  padding: 12px 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.group-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.videos-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.video-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* A/B 选择表格 */
+.ab-table {
+  max-width: 520px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ab-header,
+.ab-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+}
+
+.ab-header {
+  background: #f6f6f6;
+  font-weight: 700;
+}
+
+.ab-cell {
+  padding: 10px 10px;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab-header .ab-cell {
+  border-top: none;
+}
+
+.ab-metric {
+  justify-content: flex-start;
+  font-weight: 700;
+  color: #222;
+}
+
+.ab-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* ===== MainPage ===== */
+.main-page .scoring-guide {
+  margin-top: 8px;
+}
+
+.lyrics-section {
+  margin: 10px 0 14px;
+  padding: 10px 12px;
+  border-left: 4px solid #d32f2f;
+  background: #fff7f7;
+  border-radius: 8px;
+}
+
+/* 7 个视频横向排布 */
+.videos-grid-horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 10px 0 14px;
+}
+
+.video-block {
+  width: 168px;
+  padding: 10px 8px 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+}
+
+/* 1~5 分按钮 */
+.score-circles {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.score-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0;
+}
+
+.score-circle.selected {
+  border-width: 2px;
+}
+
+/* 最优 1~2 个 */
+.best-selection {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.best-label {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.best-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* checkbox 视觉做成方框字母（隐藏原生 checkbox） */
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkbox-text {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #666;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  background: #fff;
+}
+
+/* 选中态：靠 label 的 :has 支持不稳定，所以用 input+span 结构实现 */
+.checkbox-label input:checked + .checkbox-text {
+  border-width: 3px;
+}
+
+/* ===== 底部按钮 ===== */
+.footer-nav {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footer-nav button {
+  min-width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.footer-nav button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
